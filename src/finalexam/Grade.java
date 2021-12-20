@@ -40,6 +40,11 @@ public class Grade extends javax.swing.JFrame {
         jLabel2.setText("Enter your score: ");
 
         jButton1.setText("Check");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("Result");
 
@@ -80,6 +85,26 @@ public class Grade extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        int score = Integer.parseInt(jTextField1.getText());
+        String grade = "";
+        
+        if(score < 4){
+            grade = "A";
+        } else if(score < 3){
+            grade = "B";
+        } else if(score < 2){
+            grade = "C";
+        } else if(score < 1){
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+        
+        jLabel3.setText("Your grade is " + grade);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
