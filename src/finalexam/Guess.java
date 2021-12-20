@@ -106,7 +106,7 @@ public class Guess extends javax.swing.JFrame {
         
         int guess = Integer.parseInt(jTextField1.getText());
         
-        jLabel3.setText(String.valueOf(rand_int));
+        txt_random_result.setText(String.valueOf(rand_int));
         
         if(rand_int == guess){
             jLabel4.setText("Congratulation");

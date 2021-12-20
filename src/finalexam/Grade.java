@@ -103,7 +103,7 @@ public class Grade extends javax.swing.JFrame {
             grade = "F";
         }
         
-        jLabel3.setText("Your grade is " + grade);
+        txt_grade.setText("Your grade is " + grade);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

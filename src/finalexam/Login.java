@@ -119,7 +119,7 @@ public class Login extends javax.swing.JFrame {
         //default email is admin@laotop.net
         //default password is 1234
         
-        if(jTextField1.getText().equals("admin@laotop.net") && jTextField2.getText().equals("1234")){
+        if(txt_login.getText().equals("admin@laotop.net") && txt_password.getText().equals("1234")){
             jLabel4.setForeground(Color.blue);
             jLabel4.setText("You are logged in!");
         } else {
